@@ -1,0 +1,255 @@
+2022-11-10 11:40:43.604  INFO 20180 --- [restartedMain] com.student.ust.UstApplication           : Starting UstApplication using Java 1.8.0_241 on ustfsd68 with PID 20180 (C:\Users\ustjavafsdb214\ust\target\classes started by ustjavafsdb214 in C:\Users\ustjavafsdb214\ust)
+2022-11-10 11:40:43.607 DEBUG 20180 --- [restartedMain] com.student.ust.UstApplication           : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-10 11:40:43.607  INFO 20180 --- [restartedMain] com.student.ust.UstApplication           : The following 1 profile is active: "dev"
+2022-11-10 11:40:43.770  INFO 20180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-10 11:40:43.774  INFO 20180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-10 11:40:45.539  INFO 20180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-10 11:40:45.644  INFO 20180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2022-11-10 11:40:47.018  INFO 20180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-11-10 11:40:47.039  INFO 20180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-10 11:40:47.039  INFO 20180 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-10 11:40:47.246  INFO 20180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-10 11:40:47.247  INFO 20180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3472 ms
+2022-11-10 11:40:47.675  INFO 20180 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-10 11:40:47.821  INFO 20180 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-10 11:40:48.207  INFO 20180 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-10 11:40:48.420  INFO 20180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-10 11:40:49.038  INFO 20180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-10 11:40:49.078  INFO 20180 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-10 11:40:50.871 DEBUG 20180 --- [restartedMain] org.hibernate.SQL                        : alter table book_ustbatch_mappedby add constraint FKnhr0971seg0rt4aos8h335rp5 foreign key (student_id) references student_ustbatch_mappedby (student_id)
+2022-11-10 11:40:51.315 DEBUG 20180 --- [restartedMain] org.hibernate.SQL                        : alter table student_ustbatch_mappedby add constraint FK2vgtgat13wkd5acnym3mcvhng foreign key (book_id) references book_ustbatch_mappedby (book_id)
+2022-11-10 11:40:51.460  INFO 20180 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-10 11:40:51.481  INFO 20180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 11:40:53.052  WARN 20180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-10 11:40:53.340  INFO 20180 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-10 11:40:53.602  INFO 20180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-10 11:40:55.466  INFO 20180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-11-10 11:40:55.480  INFO 20180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-10 11:40:55.708  INFO 20180 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-10 11:40:55.828  INFO 20180 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-10 11:40:56.114  INFO 20180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-11-10 11:40:56.120  INFO 20180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-11-10 11:40:56.128  INFO 20180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2022-11-10 11:40:56.143  INFO 20180 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: get2UsingGET_1
+2022-11-10 11:40:56.393  INFO 20180 --- [restartedMain] com.student.ust.UstApplication           : Started UstApplication in 13.62 seconds (JVM running for 14.791)
+2022-11-10 11:41:13.712  INFO 20180 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 11:41:13.713  INFO 20180 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-10 11:41:13.716  INFO 20180 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-10 11:41:13.988 DEBUG 20180 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-11-10 11:41:14.028 DEBUG 20180 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-11-10 11:41:14.132 DEBUG 20180 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : insert into student_ustbatch_mappedby (book_id, curr_time, date, modified_date, name, rollno, student_id) values (?, ?, ?, ?, ?, ?, ?)
+2022-11-10 11:41:14.136 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [null]
+2022-11-10 11:41:14.138 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [TIME] - [11:41:13]
+2022-11-10 11:41:14.139 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-11-10]
+2022-11-10 11:41:14.140 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DATE] - [2022-11-10]
+2022-11-10 11:41:14.141 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Eater]
+2022-11-10 11:41:14.141 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [156]
+2022-11-10 11:41:14.141 TRACE 20180 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [33]
+2022-11-10 11:49:45.130 DEBUG 20180 --- [http-nio-9090-exec-5] org.hibernate.SQL                        : select student0_.student_id as student_1_1_, student0_.book_id as book_id7_1_, student0_.curr_time as curr_tim2_1_, student0_.date as date3_1_, student0_.modified_date as modified4_1_, student0_.name as name5_1_, student0_.rollno as rollno6_1_ from student_ustbatch_mappedby student0_
+2022-11-10 11:49:45.140 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [31]
+2022-11-10 11:49:45.146 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 11:49:45.150 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [16:02:27]
+2022-11-10 11:49:45.153 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-08]
+2022-11-10 11:49:45.154 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-08]
+2022-11-10 11:49:45.155 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Rajking]
+2022-11-10 11:49:45.156 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [147]
+2022-11-10 11:49:45.156 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [32]
+2022-11-10 11:49:45.157 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 11:49:45.157 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [16:10:05]
+2022-11-10 11:49:45.157 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-08]
+2022-11-10 11:49:45.157 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-08]
+2022-11-10 11:49:45.157 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Eater]
+2022-11-10 11:49:45.158 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [156]
+2022-11-10 11:49:45.158 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [33]
+2022-11-10 11:49:45.158 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 11:49:45.158 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [11:41:13]
+2022-11-10 11:49:45.159 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-10]
+2022-11-10 11:49:45.159 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-10]
+2022-11-10 11:49:45.159 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Eater]
+2022-11-10 11:49:45.159 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [156]
+2022-11-10 11:49:45.298 DEBUG 20180 --- [http-nio-9090-exec-5] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 11:49:45.298 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [31]
+2022-11-10 11:49:45.319 DEBUG 20180 --- [http-nio-9090-exec-5] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 11:49:45.319 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [32]
+2022-11-10 11:49:45.321 DEBUG 20180 --- [http-nio-9090-exec-5] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 11:49:45.321 TRACE 20180 --- [http-nio-9090-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [33]
+2022-11-10 15:20:36.837 DEBUG 20180 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select student0_.student_id as student_1_1_, student0_.book_id as book_id7_1_, student0_.curr_time as curr_tim2_1_, student0_.date as date3_1_, student0_.modified_date as modified4_1_, student0_.name as name5_1_, student0_.rollno as rollno6_1_ from student_ustbatch_mappedby student0_
+2022-11-10 15:20:36.891 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [31]
+2022-11-10 15:20:36.898 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 15:20:36.899 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [16:02:27]
+2022-11-10 15:20:36.902 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-08]
+2022-11-10 15:20:36.905 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-08]
+2022-11-10 15:20:36.905 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Rajking]
+2022-11-10 15:20:36.905 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [147]
+2022-11-10 15:20:36.905 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [32]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [16:10:05]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-08]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-08]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Eater]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [156]
+2022-11-10 15:20:36.906 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_] : [INTEGER]) - [33]
+2022-11-10 15:20:36.907 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_] : [INTEGER]) - [null]
+2022-11-10 15:20:36.907 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_] : [TIME]) - [11:41:13]
+2022-11-10 15:20:36.907 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_] : [DATE]) - [2022-11-10]
+2022-11-10 15:20:36.907 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_] : [DATE]) - [2022-11-10]
+2022-11-10 15:20:36.908 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_] : [VARCHAR]) - [Eater]
+2022-11-10 15:20:36.908 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_] : [INTEGER]) - [156]
+2022-11-10 15:20:36.942 DEBUG 20180 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 15:20:36.943 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [31]
+2022-11-10 15:20:36.952 DEBUG 20180 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 15:20:36.952 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [32]
+2022-11-10 15:20:36.953 DEBUG 20180 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 15:20:36.954 TRACE 20180 --- [http-nio-9090-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [33]
+2022-11-10 16:43:17.642 DEBUG 20180 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select student0_.student_id as student_1_1_0_, student0_.book_id as book_id7_1_0_, student0_.curr_time as curr_tim2_1_0_, student0_.date as date3_1_0_, student0_.modified_date as modified4_1_0_, student0_.name as name5_1_0_, student0_.rollno as rollno6_1_0_, book1_.book_id as book_id1_0_1_, book1_.book_author_name as book_aut2_0_1_, book1_.book_isp as book_isp3_0_1_, book1_.book_name as book_nam4_0_1_, book1_.student_id as student_5_0_1_, student2_.student_id as student_1_1_2_, student2_.book_id as book_id7_1_2_, student2_.curr_time as curr_tim2_1_2_, student2_.date as date3_1_2_, student2_.modified_date as modified4_1_2_, student2_.name as name5_1_2_, student2_.rollno as rollno6_1_2_ from student_ustbatch_mappedby student0_ left outer join book_ustbatch_mappedby book1_ on student0_.book_id=book1_.book_id left outer join student_ustbatch_mappedby student2_ on book1_.student_id=student2_.student_id where student0_.student_id=?
+2022-11-10 16:43:17.646 TRACE 20180 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1000]
+2022-11-10 16:43:17.757 ERROR 20180 --- [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.student.ust.service.StudentService.getStudentByID(StudentService.java:23) ~[classes/:na]
+	at com.student.ust.controller.StudentController.get(StudentController.java:29) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.68.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.68.jar:9.0.68]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+
+2022-11-10 17:14:36.163  INFO 20180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 17:14:36.260  INFO 20180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-10 17:14:36.290  INFO 20180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-10 17:14:48.164  INFO 772 --- [restartedMain] com.student.ust.UstApplication           : Starting UstApplication using Java 1.8.0_241 on ustfsd68 with PID 772 (C:\Users\ustjavafsdb214\ust\target\classes started by ustjavafsdb214 in C:\Users\ustjavafsdb214\ust)
+2022-11-10 17:14:48.166 DEBUG 772 --- [restartedMain] com.student.ust.UstApplication           : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-10 17:14:48.167  INFO 772 --- [restartedMain] com.student.ust.UstApplication           : The following 1 profile is active: "dev"
+2022-11-10 17:14:48.392  INFO 772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-10 17:14:48.392  INFO 772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-10 17:14:50.838  INFO 772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-10 17:14:51.009  INFO 772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+2022-11-10 17:14:52.984  INFO 772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-11-10 17:14:53.005  INFO 772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-10 17:14:53.008  INFO 772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-10 17:14:53.264  INFO 772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-10 17:14:53.265  INFO 772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4872 ms
+2022-11-10 17:14:53.796  INFO 772 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-10 17:14:53.927  INFO 772 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-10 17:14:54.266  INFO 772 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-10 17:14:54.483  INFO 772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-10 17:14:55.085  INFO 772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-10 17:14:55.118  INFO 772 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-10 17:14:56.887 DEBUG 772 --- [restartedMain] org.hibernate.SQL                        : alter table book_ustbatch_mappedby add constraint FKnhr0971seg0rt4aos8h335rp5 foreign key (student_id) references student_ustbatch_mappedby (student_id)
+2022-11-10 17:14:57.134 DEBUG 772 --- [restartedMain] org.hibernate.SQL                        : alter table student_ustbatch_mappedby add constraint FK2vgtgat13wkd5acnym3mcvhng foreign key (book_id) references book_ustbatch_mappedby (book_id)
+2022-11-10 17:14:57.213  INFO 772 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-10 17:14:57.229  INFO 772 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 17:14:59.187  WARN 772 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-10 17:14:59.619  INFO 772 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-10 17:14:59.849  INFO 772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-10 17:15:04.011  INFO 772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-11-10 17:15:04.014  INFO 772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-10 17:15:04.073  INFO 772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-10 17:15:04.201  INFO 772 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-10 17:15:04.459  INFO 772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-11-10 17:15:04.462  INFO 772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-11-10 17:15:04.466  INFO 772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2022-11-10 17:15:04.470  INFO 772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: get2UsingGET_1
+2022-11-10 17:15:04.516  INFO 772 --- [restartedMain] com.student.ust.UstApplication           : Started UstApplication in 17.135 seconds (JVM running for 18.086)
+2022-11-10 17:15:23.150  INFO 772 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 17:15:23.151  INFO 772 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-10 17:15:23.157  INFO 772 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-11-10 17:15:23.593 DEBUG 772 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select student0_.student_id as student_1_1_0_, student0_.book_id as book_id7_1_0_, student0_.curr_time as curr_tim2_1_0_, student0_.date as date3_1_0_, student0_.modified_date as modified4_1_0_, student0_.name as name5_1_0_, student0_.rollno as rollno6_1_0_, book1_.book_id as book_id1_0_1_, book1_.book_author_name as book_aut2_0_1_, book1_.book_isp as book_isp3_0_1_, book1_.book_name as book_nam4_0_1_, book1_.student_id as student_5_0_1_, student2_.student_id as student_1_1_2_, student2_.book_id as book_id7_1_2_, student2_.curr_time as curr_tim2_1_2_, student2_.date as date3_1_2_, student2_.modified_date as modified4_1_2_, student2_.name as name5_1_2_, student2_.rollno as rollno6_1_2_ from student_ustbatch_mappedby student0_ left outer join book_ustbatch_mappedby book1_ on student0_.book_id=book1_.book_id left outer join student_ustbatch_mappedby student2_ on book1_.student_id=student2_.student_id where student0_.student_id=?
+2022-11-10 17:15:23.621 TRACE 772 --- [http-nio-9090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1000]
+2022-11-10 17:27:58.301  INFO 772 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 17:27:58.367  INFO 772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-10 17:27:58.406  INFO 772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-10 17:28:06.751  INFO 16572 --- [restartedMain] com.student.ust.UstApplication           : Starting UstApplication using Java 1.8.0_241 on ustfsd68 with PID 16572 (C:\Users\ustjavafsdb214\ust\target\classes started by ustjavafsdb214 in C:\Users\ustjavafsdb214\ust)
+2022-11-10 17:28:06.752 DEBUG 16572 --- [restartedMain] com.student.ust.UstApplication           : Running with Spring Boot v2.7.5, Spring v5.3.23
+2022-11-10 17:28:06.753  INFO 16572 --- [restartedMain] com.student.ust.UstApplication           : The following 1 profile is active: "dev"
+2022-11-10 17:28:06.843  INFO 16572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-10 17:28:06.843  INFO 16572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-10 17:28:08.363  INFO 16572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-10 17:28:08.460  INFO 16572 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2022-11-10 17:28:09.716  INFO 16572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-11-10 17:28:09.734  INFO 16572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-10 17:28:09.735  INFO 16572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-10 17:28:09.971  INFO 16572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-10 17:28:09.971  INFO 16572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3127 ms
+2022-11-10 17:28:10.492  INFO 16572 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-10 17:28:10.675  INFO 16572 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-10 17:28:11.160  INFO 16572 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-10 17:28:11.427  INFO 16572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-10 17:28:12.063  INFO 16572 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-10 17:28:12.122  INFO 16572 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-10 17:28:13.688 DEBUG 16572 --- [restartedMain] org.hibernate.SQL                        : alter table book_ustbatch_mappedby add constraint FKnhr0971seg0rt4aos8h335rp5 foreign key (student_id) references student_ustbatch_mappedby (student_id)
+2022-11-10 17:28:13.823 DEBUG 16572 --- [restartedMain] org.hibernate.SQL                        : alter table student_ustbatch_mappedby add constraint FK2vgtgat13wkd5acnym3mcvhng foreign key (book_id) references book_ustbatch_mappedby (book_id)
+2022-11-10 17:28:13.926  INFO 16572 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-10 17:28:13.941  INFO 16572 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-10 17:28:15.298  WARN 16572 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-10 17:28:15.575  INFO 16572 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-10 17:28:15.767  INFO 16572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-10 17:28:17.383  INFO 16572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-11-10 17:28:17.387  INFO 16572 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-10 17:28:17.465  INFO 16572 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-10 17:28:17.552  INFO 16572 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-10 17:28:17.768  INFO 16572 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-11-10 17:28:17.773  INFO 16572 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-11-10 17:28:17.777  INFO 16572 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2022-11-10 17:28:17.783  INFO 16572 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: get2UsingGET_1
+2022-11-10 17:28:17.823  INFO 16572 --- [restartedMain] com.student.ust.UstApplication           : Started UstApplication in 11.671 seconds (JVM running for 12.462)
+2022-11-10 17:28:46.649  INFO 16572 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-10 17:28:46.650  INFO 16572 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-10 17:28:46.652  INFO 16572 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-10 17:28:46.751 DEBUG 16572 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select student0_.student_id as student_1_1_0_, student0_.book_id as book_id7_1_0_, student0_.curr_time as curr_tim2_1_0_, student0_.date as date3_1_0_, student0_.modified_date as modified4_1_0_, student0_.name as name5_1_0_, student0_.rollno as rollno6_1_0_, book1_.book_id as book_id1_0_1_, book1_.book_author_name as book_aut2_0_1_, book1_.book_isp as book_isp3_0_1_, book1_.book_name as book_nam4_0_1_, book1_.student_id as student_5_0_1_, student2_.student_id as student_1_1_2_, student2_.book_id as book_id7_1_2_, student2_.curr_time as curr_tim2_1_2_, student2_.date as date3_1_2_, student2_.modified_date as modified4_1_2_, student2_.name as name5_1_2_, student2_.rollno as rollno6_1_2_ from student_ustbatch_mappedby student0_ left outer join book_ustbatch_mappedby book1_ on student0_.book_id=book1_.book_id left outer join student_ustbatch_mappedby student2_ on book1_.student_id=student2_.student_id where student0_.student_id=?
+2022-11-10 17:28:46.758 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [31]
+2022-11-10 17:28:46.772 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id1_0_1_] : [INTEGER]) - [null]
+2022-11-10 17:28:46.773 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([student_1_1_2_] : [INTEGER]) - [null]
+2022-11-10 17:28:46.781 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([book_id7_1_0_] : [INTEGER]) - [null]
+2022-11-10 17:28:46.783 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([curr_tim2_1_0_] : [TIME]) - [16:02:27]
+2022-11-10 17:28:46.785 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([date3_1_0_] : [DATE]) - [2022-11-08]
+2022-11-10 17:28:46.786 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([modified4_1_0_] : [DATE]) - [2022-11-08]
+2022-11-10 17:28:46.786 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name5_1_0_] : [VARCHAR]) - [Rajking]
+2022-11-10 17:28:46.787 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rollno6_1_0_] : [INTEGER]) - [147]
+2022-11-10 17:28:46.886 DEBUG 16572 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select bookset0_.student_id as student_5_0_0_, bookset0_.book_id as book_id1_0_0_, bookset0_.book_id as book_id1_0_1_, bookset0_.book_author_name as book_aut2_0_1_, bookset0_.book_isp as book_isp3_0_1_, bookset0_.book_name as book_nam4_0_1_, bookset0_.student_id as student_5_0_1_ from book_ustbatch_mappedby bookset0_ where bookset0_.student_id=?
+2022-11-10 17:28:46.887 TRACE 16572 --- [http-nio-9090-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [31]
