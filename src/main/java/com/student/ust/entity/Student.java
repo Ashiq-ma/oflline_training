@@ -3,6 +3,7 @@ package com.student.ust.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.sql.Time;
 import java.time.LocalDate;
 import java.util.Set;
@@ -18,6 +19,12 @@ public class Student {
     private String name;
     private int rollno;
 
+    @NotNull
+     private String email;
+
+    @NotNull
+    private String password;
+
     @OneToOne
     @JoinColumn(name="book_id")
     private Book book;
@@ -29,7 +36,6 @@ public class Student {
 
     @OneToMany(cascade = CascadeType.ALL,fetch =FetchType.LAZY,mappedBy = "student")
     private Set<Book> bookSet;
-
 
 
 
