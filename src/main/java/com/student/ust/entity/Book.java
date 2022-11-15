@@ -4,6 +4,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+/**
+ * The type Book.
+ */
 @Entity
 @Data
 @Table(name="book_ustbatch_mappedby")
@@ -16,6 +19,9 @@ public class Book {
     private String bookAuthorName;
     private int bookIsp;
 
+    /**
+     * The Student.
+     */
     @ManyToOne
     @JoinColumn(name="student_id")
     Student student;

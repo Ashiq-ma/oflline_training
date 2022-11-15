@@ -8,6 +8,9 @@ import java.sql.Time;
 import java.time.LocalDate;
 import java.util.Set;
 
+/**
+ * The type Student.
+ */
 @Entity
 @Data
 @Table(name="student_ustbatch_mappedby")

@@ -4,6 +4,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+/**
+ * The type Tutor.
+ */
 @Entity
 @Data
 public class Tutor {

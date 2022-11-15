@@ -1,8 +1,6 @@
 package com.student.ust.controller;
 
 import com.student.ust.entity.Book;
-
-import com.student.ust.entity.Student;
 import com.student.ust.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,12 +10,24 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * The type Book controller.
+ */
 @RestController
 public class BookController {
 
+    /**
+     * The Book service.
+     */
     @Autowired
     BookService bookService;
 
+    /**
+     * Get response entity.
+     *
+     * @param bookId the book id
+     * @return the response entity
+     */
     @GetMapping("/book/{bookId}")
     public ResponseEntity<Book>
     get(@PathVariable Integer bookId) {
@@ -30,6 +40,11 @@ public class BookController {
     }
 
 
+    /**
+     * Gets 2.
+     *
+     * @return the 2
+     */
     @GetMapping("/book")
     public ResponseEntity<List<Book>>
     get2() {
@@ -41,14 +56,31 @@ public class BookController {
         }
     }
 
+    /**
+     * Add.
+     *
+     * @param book the book
+     */
     @PostMapping("/book")
     public void add(@RequestBody Book book) {
         bookService.saveBook(book);
     }
+
+    /**
+     * Update book.
+     *
+     * @param book the book
+     */
     @PutMapping("/book")
     public void updateBook(@RequestBody Book book){
         bookService.updateBook(book);
     }
+
+    /**
+     * Delete.
+     *
+     * @param bookId the book id
+     */
     @DeleteMapping("/book/{bookId}")
     public void delete(@PathVariable Integer bookId){
         bookService.deleteBook(bookId);

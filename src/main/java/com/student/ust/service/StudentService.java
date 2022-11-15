@@ -16,8 +16,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static com.student.ust.util.utilClass.getSHA;
 
@@ -68,8 +66,8 @@ public class StudentService {
         student.setCurrTime(Time.valueOf(LocalTime.now()));
         String email=student.getEmail();
         String password=student.getPassword();
-        int result = validateEmail(email);
-        int result1=validatePassword(password);
+        int result = utilClass.validateEmail(email);
+        int result1=utilClass.validatePassword(password);
 
 
         if(result==0 && result1==0) {
@@ -129,17 +127,6 @@ public class StudentService {
      * @param email the email
      * @return the int
      */
-    public int validateEmail(String email) {
-        String regex = "^([A-Za-z0-9+_.-]+)@([A-Za-z0-9]+)\\.([a-z]+)$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(email);
-        if (matcher.matches() == true) {
-            return 0;
-        } else {
-            throw new InvalidEmail();
-        }
-
-    }
 
     /**
      * Validate password int.
@@ -147,16 +134,7 @@ public class StudentService {
      * @param password the password
      * @return the int
      */
-    public int validatePassword(String password) {
-        String regexPassword = "^(?=(?:.*\\d){3,})(?=\\S+$)(?=.*[@#$%^&+=])(?=(?:.*[A-Za-z]){3,}).{8,}$";
-        Pattern pattern = Pattern.compile(regexPassword);
-        Matcher matcher = pattern.matcher(password);
-        if (matcher.matches() == true) {
-            return 0;
-        } else {
-            throw new InvalidPassword();
-        }
-    }
+
 
 
     /**
