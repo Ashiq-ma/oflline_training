@@ -1,6 +1,7 @@
 package com.student.ust.controller;
 
 import com.student.ust.Exception.BusinessException;
+import com.student.ust.dto.StudentDto;
 import com.student.ust.entity.Student;
 import com.student.ust.service.StudentService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,13 +22,13 @@ public class StudentController {
     StudentService studentService;
 
     @GetMapping("/students/{id}")
-    public ResponseEntity<Student>
+    public ResponseEntity<StudentDto>
     get(@PathVariable Integer id) {
         try {
             Student student = studentService.getStudentByID(id);
-            return new ResponseEntity<Student>(student, HttpStatus.OK);
+            return new ResponseEntity<StudentDto>(studentService.convertToDto(student), HttpStatus.OK);
         } catch (NoSuchElementException e) {
-            return new ResponseEntity<Student>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<StudentDto>(HttpStatus.NOT_FOUND);
         }
     }
     @GetMapping("/student")

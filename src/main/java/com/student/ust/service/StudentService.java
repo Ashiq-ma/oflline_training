@@ -3,9 +3,11 @@ package com.student.ust.service;
 
 import com.student.ust.Exception.InvalidEmail;
 import com.student.ust.Exception.InvalidPassword;
+import com.student.ust.dto.StudentDto;
 import com.student.ust.entity.Student;
 import com.student.ust.repository.StudentRepository;
 import com.student.ust.util.utilClass;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +33,8 @@ public class StudentService {
      */
     @Autowired
     StudentRepository studentRepository;
+    @Autowired
+   private ModelMapper modelMapper;
 
     /**
      * Gets student by id.
@@ -155,11 +159,15 @@ public class StudentService {
     }
 
 
-
-
-
-
-
+    /**
+     * Convert to dto student dto.
+     *
+     * @param student the student
+     * @return the student dto
+     */
+    public StudentDto convertToDto(Student student) {
+        return modelMapper.map(student,StudentDto.class);
+    }
 }
 
 
